@@ -14,6 +14,9 @@ public class ConcreteProxyTest {
         client.execute();
     }
 
+    /**
+     * ConcreteClient 생성자 인자에 ConcreteLogic와 TimeProxy 모두 넣을 수 있다.
+     */
     @Test
     void addProxy() {
         ConcreteLogic concreteLogic = new ConcreteLogic();
