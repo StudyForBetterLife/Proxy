@@ -9,6 +9,10 @@ import org.aopalliance.intercept.MethodInvocation;
  */
 @Slf4j
 public class TimeAdvice implements MethodInterceptor {
+
+    /**
+     * target 클래스의 정보는 MethodInvocation안에 모두 포함되어있다.
+     */
     @Override
     public Object invoke(MethodInvocation invocation) throws Throwable {
         log.info("TimeProxy 실행");
